@@ -1,0 +1,196 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #5e6a74;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin: 0;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Login Icon Styling */
+  .login-icon {
+    margin-left: auto;
+  }
+  
+  .login-icon a {
+    font-size: 24px;
+  }
+  
+  /* Main Content Styling */
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contact-form, .contact-info {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-form h2, .contact-info h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #5e6a74;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #5e6a74;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button:hover {
+    background-color: #444f59;
+    transform: scale(1.05);
+  }
+  
+  .contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-info p i {
+    margin-right: 10px;
+    color: #5e6a74;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #5e6a74;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+
+
+
+  /* Media Query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #444f59;
+        position: absolute;
+        top: 60px; /* Ajustamos la posición */
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 999; /* Añadimos un índice Z alto para asegurar que el menú desplegable esté encima de otros elementos */
+    }
+  
+    nav ul.open {
+        display: flex;
+    }
+  
+    nav ul li {
+        margin: 10px 0;
+    }
+  
+    .login-icon {
+        margin-left: 0;
+    }
+  
+    .login-icon a {
+        font-size: 24px;
+    }
+  
+    .login-icon a:hover {
+        transform: none;
+    }
+  
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+        z-index: 1000; /* Ajustamos el índice Z para asegurar que el icono esté encima del menú */
+    }
+  }
+  /* Media Query para ocultar el icono en pantallas grandes */
+  @media screen and (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+  }

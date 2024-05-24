@@ -1,0 +1,149 @@
+/* Estilo para el logo */
+nav ul li a img.logo {
+  width: 40px; /* Ajusta el tamaño según sea necesario */
+  transition: transform 0.3s;
+}
+
+nav ul li a img.logo:hover {
+  transform: scale(1.1); /* Aumenta el tamaño del logo ligeramente */
+}
+
+/* Estilo del menú de navegación */
+header {
+  background-color: #5e6a74;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+nav ul {
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Login Icon Styling */
+.login-icon {
+  margin-left: auto;
+}
+
+.login-icon a {
+  font-size: 24px;
+}
+
+.login-icon a:hover {
+  transform: scale(1.1); /* Efecto de escala para el ícono de login */
+}
+
+/* Features Section */
+.features {
+  background-color: #fff;
+  padding: 20px 0;
+  
+}
+
+.features .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  flex-direction: line;
+}
+
+.feature {
+  flex: 1 1 300px;
+  background-color: #737169;
+  color: #ffffff;
+  width: 201px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+  background-color: #f5c400;
+}
+
+.feature i {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.feature h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.feature p {
+  margin-bottom: 10px;
+}
+
+/* Call to Action Section */
+.cta {
+  background-color: #ffcc00;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.cta h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.cta .button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #ffcc00;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta .button:hover {
+  background-color: #444f59;
+  transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+  background-color: #5e6a74;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+

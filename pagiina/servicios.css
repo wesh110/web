@@ -1,0 +1,170 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #5e6a74;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin: 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Login Icon Styling */
+.login-icon {
+    margin-left: auto;
+}
+
+.login-icon a {
+    font-size: 24px;
+}
+
+
+/* Services Section */
+.services {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+}
+
+.services .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service {
+    flex: 1 1 300px;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.service:hover {
+    transform: scale(1.05);
+    background-color: #fff200;
+}
+
+.service i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.service h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.service p {
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #5e6a74;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* Media Query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #444f59;
+        position: absolute;
+        top: 60px; /* Ajustamos la posición */
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 999; /* Añadimos un índice Z alto para asegurar que el menú desplegable esté encima de otros elementos */
+    }
+  
+    nav ul.open {
+        display: flex;
+    }
+  
+    nav ul li {
+        margin: 10px 0;
+    }
+  
+    .login-icon {
+        margin-left: 0;
+    }
+  
+    .login-icon a {
+        font-size: 24px;
+    }
+  
+    .login-icon a:hover {
+        transform: none;
+    }
+  
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+        z-index: 1000; /* Ajustamos el índice Z para asegurar que el icono esté encima del menú */
+    }
+  }
+  /* Media Query para ocultar el icono en pantallas grandes */
+  @media screen and (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+  }
